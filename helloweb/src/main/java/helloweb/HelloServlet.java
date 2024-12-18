@@ -14,6 +14,7 @@ public class HelloServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("id");
 		String no = request.getParameter("no");
+		request.getRequestURI();
 		
 		System.out.println(id + ":" + no);
 		
